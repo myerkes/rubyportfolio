@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+.navbar-brand image {
+    float: left;
+    position: relative;
+}
+
 body {
     background: linear-gradient(70deg, #e6e6e6, #f7f7f7);
     color: #514B64;
@@ -15,10 +20,6 @@ code {
     margin: 0 0.3rem;
 }
 
-.navbar-nav {
-    float: right;
-    position: relative;
-}
 
 /*
 .header {
