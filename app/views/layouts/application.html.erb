@@ -20,11 +20,39 @@
   </head>
 
   <body>
+    <!-- Nav Bar -->
+    <nav class="header">
+      <div class="navbar">
+        <div class="navbar_links">
+          <ul class="menu">
+            <li>Welcome</li>
+            <li>Portfolio</li>
+            <li>About Me</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="navbar_logo">
+          <img src="https://i.imgur.com/DWSFZX4.png" title="Matthew Yerkes Logo" class="personal_logo"/>
+        </div>
+      </div>
+    </nav>
+    
     <%= yield %>
 
     <!-- Import Bootstrap Bundle with Popper -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     -->
+
+    <footer>
+      <div class="testing">
+      <ul class="social_media">
+        <li><a href="https://www.linkedin.com/in/matthewyerkes/"><img class="social_media_images" src="https://i.imgur.com/IrMUX7M.png" title="linkedin" /></a></li>
+        <li><a href="https://github.com/myerkes"><img class="social_media_images" src="https://i.imgur.com/19tKSHj.png" title="github" /></a></li>        
+      </ul>
+      <p>© 2021 Matt Yerkes</p>
+      <div class="attribution">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      </div>
+    </footer>
   </body>
 </html>
