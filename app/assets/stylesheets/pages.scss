@@ -2,6 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+body {
+    background: linear-gradient(70deg, #e6e6e6, #f7f7f7);
+    color: #514B64;
+    min-height: 100vh;
+}
+  
+code {
+    background: #fff;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    margin: 0 0.3rem;
+}
+
+.navbar-nav {
+    float: right;
+    position: relative;
+}
+
+/*
 .header {
     width: 100%;
     margin: 0 auto;
@@ -42,23 +61,8 @@
     padding-right: 50px;
     width: 100px;
 
-}
+}*/
 
-
-/*
-a:link {
-    color: white;
-}
-a:visited {
-    color: white;
-}
-a:hover {
-    color: lightgray;
-}
-a:active {
-    color: white;
-}
-*/
 
 body {
     margin: 0;
