@@ -2,10 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-.navbar-brand image {
-    float: left;
-    position: relative;
-}
 
 body {
     background: linear-gradient(70deg, #e6e6e6, #f7f7f7);
@@ -13,59 +9,9 @@ body {
     min-height: 100vh;
 }
   
-code {
-    background: #fff;
-    padding: 0.2rem;
-    border-radius: 0.2rem;
-    margin: 0 0.3rem;
-}
 
 
-/*
-.header {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.navbar {
-    width: 100%;
-    overflow: hidden;
-    height: 120px;
-    line-height: 150px;
-    background-color: #24a188;
-}
-
-.menu {
-    float: right;
-}
-
-.menu li {
-    float: left;
-    width: 120px;
-    height: 120px;
-    line-height: 100px;
-    text-align: center;
-    list-style: none;
-}
-
-.menu li a {
-    text-decoration: none;
-    font-family: 'Calibri';
-    font-size: larger;
-}
-
-.menu li:hover {
-    background: #1a7765;
-}
-
-.navbar_logo img {
-    padding-right: 50px;
-    width: 100px;
-
-}*/
-
-
-body {
+.main {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -73,24 +19,26 @@ body {
     background-repeat: repeat;
 }
 
-.social_media_images {
-    height: 24px;
-    width: 24px;
-}
-
-.social_media li a {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: block;
-    height: 24px;
-    width: 24px;
-}
-
-.testing {
+footer {
     float: right;
-    margin: 5;
-    padding: 50px;
+    margin: 5px;
+    padding: 25px;
+}
+
+footer p {
+   text-align: right;
+}
+
+
+.social_media li {
+    display: inline-block;
+    text-align: right;
+}
+
+.social_media_images {
+    height: 30px;
+    width: 30px;
+    
 }
 
 .attribution {
