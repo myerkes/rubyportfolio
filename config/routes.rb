@@ -2,12 +2,12 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'pages#welcome'
 
-  get '/portfolio' => 'portfolio#index'
+  get '/portfolio' => 'portfolio#index', as: :portfolio
   get '/portfolio/:id' => 'portfolio#show'
 
-  get '/about' => 'about#index'
+  get '/about' => 'about#index', as: :about
 
-  get '/contact' => 'contact#index'
+  get '/contact' => 'contact#index', as: :contact
 
   resources :pages
 end
