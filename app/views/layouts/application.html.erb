@@ -21,64 +21,65 @@
   </head>
 
   <body>
-    <!-- Bootstrap NavBar Format -->
-      <!-- Navbar Component -->
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Matthew Yerkes</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- Navbar Component -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="/#">Matthew Yerkes</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact">Contact</a>
-            </li>
-            <!-- Dropdown Toggle
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Straps
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/#">Home</a>
-                <a class="dropdown-item" href="portfolio">Portfolio</a>
-                <a class="dropdown-item" href="about">About</a>
-                <a class="dropdown-item" href="contact">Contact</a>
-              </div>
-            </li>
-             -->
-          </ul>
-        </div>
-      </nav>
-      <!-- End of navbar -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact">Contact</a>
+          </li>
+          <!-- Dropdown Toggle
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Straps
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/#">Home</a>
+              <a class="dropdown-item" href="portfolio">Portfolio</a>
+              <a class="dropdown-item" href="about">About</a>
+              <a class="dropdown-item" href="contact">Contact</a>
+            </div>
+          </li>
+            -->
+        </ul>
+      </div>
+    </nav>
+    <!-- End of navbar -->
 
     <div class="content">
       <%= yield %>
     </div>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <div>
         <ul class="social_media">
           <li><a href="https://www.linkedin.com/in/matthewyerkes/" target="_blank"><img class="social_media_images" src="https://i.imgur.com/IrMUX7M.png" title="linkedin" /></a></li>
-          <li><a href="https://github.com/myerkes" target="_blank"><img class="social_media_images" src="https://i.imgur.com/19tKSHj.png" title="github" /></a></li>        
+          <li><a href="https://github.com/myerkes" target="_blank"><img class="social_media_images" src="https://i.imgur.com/19tKSHj.png" title="github" /></a></li>
+          <li><a href="https://www.hackerrank.com/Mattyerkes23" target="_blank" title="HackerRank">HackerRank</a></li>        
         </ul>
       
         <p>© 2021 Matt Yerkes</p>
         <div class="attribution">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
       </div>
     </footer>
+    <!-- End of footer -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -86,7 +87,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
   </body>
