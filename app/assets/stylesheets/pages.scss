@@ -3,52 +3,5 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 
-body {
-    background: linear-gradient(70deg, #e6e6e6, #f7f7f7);
-    color: #514B64;
-    min-height: 100vh;
-}
-  
 
 
-.main {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-image: url("https://imgur.com/mq6E7lV");
-    background-repeat: repeat;
-}
-
-footer {
-    float: right;
-    margin: 5px;
-    padding: 25px;
-}
-
-footer p {
-   text-align: right;
-}
-
-.container {
-    width: 100%;
-}
-
-
-.social_media li {
-    display: inline-block;
-    text-align: right;
-}
-
-.social_media_images {
-    height: 30px;
-    width: 30px;
-    
-}
-
-.attribution {
-    color: lightgray;
-}
-
-.attribution a {
-    color: rgb(192, 190, 190);
-}
