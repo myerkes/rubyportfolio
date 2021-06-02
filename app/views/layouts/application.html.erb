@@ -22,7 +22,8 @@
   <body>
     <!-- Navbar Component -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand" href="/#"><img src="assets/MY1.png" alt="Matthew Yerkes" width="70px"/></a>
+      <!-- <a class="navbar-brand" href="/#"><img src="assets/MY1.png" alt="Matthew Yerkes" width="70px"/></a> -->
+      <a class="navbar-brand" href="/#"><%= image_tag "/images/MY1.png", style: 'width: 70px;' %></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -71,8 +72,8 @@
     <footer class="footer text-right">
       <div class="container">
         <ul class="social_media">
-          <li><a href="https://www.linkedin.com/in/matthewyerkes/" target="_blank"><img class="social_media_images" src="assets/linkedin_logo.png" title="linkedin" /></a></li>
-          <li><a href="https://github.com/myerkes" target="_blank"><img class="social_media_images" src="assets/github_logo.png" title="github" /></a></li>
+          <li><a href="https://www.linkedin.com/in/matthewyerkes/" target="_blank"><%= image_tag "/images/linkedin_logo.png", style: 'width: 30px; margin: 5px;' %></a></li>
+          <li><a href="https://github.com/myerkes" target="_blank"><%= image_tag "/images/github_logo.png", style: 'width: 30px; margin: 5px;' %></a></li>
           <li><a href="https://www.hackerrank.com/Mattyerkes23" target="_blank" title="HackerRank">HackerRank</a></li>        
         </ul>
       
