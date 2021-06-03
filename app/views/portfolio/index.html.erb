@@ -4,7 +4,7 @@
         <% @projects.each do |project| %>
             <div class="col-md-6 col-10">
                 <div class="card my-2">
-                    <img class="card-img-top" src="<%= project.picture %>" alt="<%= project.title %>">
+                    <img class="card-img-top " src="<%= project.picture %>" alt="<%= project.title %>" style="height: 200px;">
                     <div class="card-body">
                         <h5 class="card-title"><%= project.title %></h5>
                         <p class="card-text"><%= project.description %></p>
