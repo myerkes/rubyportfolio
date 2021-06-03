@@ -1,0 +1,9 @@
+<div>
+    <h1>Contact</h1>
+    <%= form_for(@new_contact) do |f| %>
+    <%= f.text_field :name, :placeholcer => "Name", :style => "color: blue;" %>
+    <%= f.text_field :email, :placeholcer => "Email" %>
+    <%= f.text_area :message, :placeholcer => "Message" %>
+    <%= f.submit "Submit", :class => "btn" %>
+    <% end %>
+</div>
