@@ -1,15 +1,14 @@
 class Contact < MailForm::Base
-    attributes :name, validate: true
-    attributes :email, validate: /\A[^@\s]+@[^@\s]+\z/i
-    attributes :subject
-    attributes :message
-    attributes :phone
-  
+    attribute :name, validate: true
+    attribute :email, validate: true
+    attribute :message
     def headers
-        {
-            :subject => %('#{subject}'),
-            :to => 'mattyerkes23@gmail.com',
-            :from => %("#{name}" <#{email}>)
-        }
+      { 
+        #this is the subject for the email generated, it can be anything you want
+        subject: "My Contact Form",
+        to: 'myerkescontactform@gmail.com',
+        from: %("#{name}" <#{email}>)
+        #the from will display the name entered by the user followed by the email
+      }
     end
   end

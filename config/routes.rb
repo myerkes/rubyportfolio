@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get '/contact' => 'contact#index', as: :contact
 
   resources :pages
+
 end
