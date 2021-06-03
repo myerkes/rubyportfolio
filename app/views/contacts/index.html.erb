@@ -1,9 +1,26 @@
-<div>
-    <h1>Contact</h1>
-    <%= form_for(@new_contact) do |f| %>
-    <%= f.text_field :name, :placeholcer => "Name", :style => "color: blue;" %>
-    <%= f.text_field :email, :placeholcer => "Email" %>
-    <%= f.text_area :message, :placeholcer => "Message" %>
-    <%= f.submit "Submit", :class => "btn" %>
-    <% end %>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Contact Matt</h1>
+            <%= form_for(@new_contact) do |f| %>
+            <form>
+                <div class="form-group">
+                    <label for="inputEmail">Email address</label>
+                    <%= f.text_field :email, :placeholder => "example@email.com", :type => "email", :class => "form-control", :id => "inputEmail", :ariadescribedby => "emailHelp" %>
+                </div>
+                <div class="form-group">
+                    <label for="inputName">Name</label>
+                    <%= f.text_field :name, :placeholder => "Name", :type => "name", :class => "form-control", :id => "inputName" %>
+                </div>
+                <div class="form-group">
+                    <label for="inputMessage">Message</label>
+                    <%= f.text_area :message, :placeholder => "Let me know about any projects or opportunities you want to talk about!", :type => "message", :class => "form-control", :id => "inputMessage"  %>
+                </div>
+                <div class="form-group">
+                    <%= f.submit "Submit", :class => "btn-primary" %>
+                </div>
+                <% end %>
+            </form>
+        </div>
+    </div>
 </div>
