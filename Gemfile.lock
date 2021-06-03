@@ -91,6 +91,9 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
+    mail_form (1.9.0)
+      actionmailer (>= 5.2)
+      activemodel (>= 5.2)
     marcel (1.0.1)
     method_source (1.0.0)
     mini_mime (1.0.3)
@@ -205,6 +208,7 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   jbuilder (~> 2.7)
+  mail_form
   pg
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
