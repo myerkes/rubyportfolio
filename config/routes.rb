@@ -7,7 +7,11 @@ Rails.application.routes.draw do
 
   get '/about' => 'about#index', as: :about
 
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+
   resources :pages
   resources :contacts
+  resources :users
 
 end
