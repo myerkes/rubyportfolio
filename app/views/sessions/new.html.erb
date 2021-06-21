@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Admin Login</h1>
+            <%= form_for(:session, url: login_path) do |f| %>
+            <form>
+                <div class="form-group">
+                    <label for="inputEmail">Email address</label>
+                    <%= f.text_field :email, :placeholder => "Email", :type => "email", :class => "form-control", :id => "inputEmail", :ariadescribedby => "emailHelp" %>
+                </div>
+                <div class="form-group">
+                    <label for="inputName">Password</label>
+                    <%= f.password_field :password, :placeholder => "Password", :type => "password", :class => "form-control", :id => "inputPassword" %>
+                </div>
+                <div class="form-group">
+                    <%= f.submit "Submit", :class => "btn-submit" %>
+                </div>
+                <% end %>
+            </form>
+        </div>
+    </div>
+</div>
