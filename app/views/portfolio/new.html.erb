@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Create New Portfolio Project</h1>
+            <%= form_for(:project, url: portfolio_new_url) do |f| %>
+            <form>
+                <div class="form-group">
+                    <label for="inputTitle">Title</label>
+                    <%= f.text_field :title, :placeholder => "Title", :type => "title", :class => "form-control", :id => "inputTitle", :ariadescribedby => "emailHelp" %>
+                </div>
+                <div class="form-group">
+                    <label for="inputDescription">Description</label>
+                    <%= f.text_field  :description, :placeholder => "Description", :type => "Description", :class => "form-control", :id => "inputDescription" %>
+                </div>
+                <div class="form-group">
+                    <label for="inputPicture">Picture</label>
+                    <%= f.text_field  :picture, :placeholder => "Picture Link (like imgur)", :type => "picture", :class => "form-control", :id => "inputPicture" %>
+                </div>
+                <div class="form-group">
+                    <label for="inputLink">Link</label>
+                    <%= f.text_field  :link, :placeholder => "Link to Project", :type => "link", :class => "form-control", :id => "inputLink" %>
+                </div>
+                <div class="form-group">
+                    <%= f.submit "Submit", :class => "btn btn-primary" %>
+                </div>
+                <% end %>
+            </form>
+        </div>
+    </div>
+</div>
+
