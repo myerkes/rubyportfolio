@@ -4,11 +4,12 @@
         <% @projects.each do |project| %>
             <div class="col-md-6 col-10">
                 <div class="card my-2">
-                    <img class="card-img-top " src="<%= project.picture %>" alt="<%= project.title %>" style="height: 200px;">
+                    <img class="card-img-top " src="<%= project.picture %>" alt="<%= project.title %>" style="height: 200px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title"><%= project.title %></h5>
                         <p class="card-text"><%= project.description %></p>
-                        <a href="<%= project.link %>" class="btn btn-primary" target="_blank">See more</a>
+                        <a href="/portfolio/<%= project.id %>" class="btn btn-primary">Learn more</a>
+                        <a href="<%= project.link %>" class="btn btn-primary" target="_blank">Visit Project</a>
                     </div>
                 </div>
             </div>

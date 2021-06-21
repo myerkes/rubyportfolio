@@ -7,8 +7,6 @@ Rails.application.routes.draw do
 
   get '/about' => 'about#index', as: :about
 
-  #get '/contact' => 'contact#index'
-
   resources :pages
   resources :contacts
 
