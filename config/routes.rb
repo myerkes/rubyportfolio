@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  root 'pages#welcome'
+  root 'pages#welcome', as: :home
 
   get '/portfolio' => 'portfolio#index', as: :portfolio
-  get '/portfolio/:id' => 'portfolio#show'
+  get '/portfolio/:id' => 'portfolio#show', as: :project
 
   get '/about' => 'about#index', as: :about
 

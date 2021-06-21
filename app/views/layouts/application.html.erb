@@ -32,31 +32,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/#">Home <span class="sr-only">(current)</span></a>
+            <%= link_to "Home", home_path , :class => "nav-link"%>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="portfolio">Portfolio</a>
+            <%= link_to "Portfolio", portfolio_path , :class => "nav-link"%>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about">About</a>
+            <%= link_to "About", about_path , :class => "nav-link"%>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacts#index">Contact</a>
+            <%= link_to "Contact", contacts_path , :class => "nav-link"%>
           </li>
-          <!-- Dropdown Toggle
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Straps
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/#">Home</a>
-              <a class="dropdown-item" href="portfolio">Portfolio</a>
-              <a class="dropdown-item" href="about">About</a>
-              <a class="dropdown-item" href="contact">Contact</a>
-            </div>
-          </li>
-            -->
         </ul>
       </div>
     </nav>
