@@ -43,6 +43,11 @@
           <li class="nav-item">
             <%= link_to "Contact", contacts_path , :class => "nav-link"%>
           </li>
+          <% if current_user %>
+          <li class="nav-item">
+            <%= link_to "Logout", logout_path , :class => "nav-link", :method => "delete" %>
+          </li>
+          <% end %>
         </ul>
       </div>
     </nav>
