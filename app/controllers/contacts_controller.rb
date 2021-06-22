@@ -5,10 +5,6 @@ class ContactsController < ApplicationController
     end
 
     def create
-        #@contact = Contact.new()
-        #@contact.name = params[:name]
-        #@contact.email = params[:email]
-        #@contact.message = params[:message]
         @contact = Contact.new(contact_params)
         if @contact.deliver
           #render json: {message: "Email sent successfully"}

@@ -57,3 +57,5 @@ gem 'rails_12factor', group: :production
 
 # Mail form for sending emails on from forms
 gem 'mail_form', '>= 1.3.0'
+
+gem 'dotenv-rails'
