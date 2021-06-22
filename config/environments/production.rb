@@ -128,8 +128,8 @@ Rails.application.configure do
     domain: 'gmail.com',
     authentication: 'plain',
     enable_starttls_auto: true,
-    user_name: 'myerkescontactform@gmail.com',
-    password: 'contactformpass'
+    user_name: ENV['CONTACT_EMAIL'],
+    password: ENV['CONTACT_PASSWORD']
   }
   
 end
